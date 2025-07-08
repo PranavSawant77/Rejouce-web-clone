@@ -130,8 +130,25 @@ tl.from("page1-content h1 span",{
   duration:0.5,
 })
 
-
-
+  var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      speed: 7000,
+      slidesPerView: 1,
+      spaceBetween: 30,
+       freeMode: true,
+       freeModeMomentum: false,
+        autoplay:{
+            delay: 0,
+            disableOnInteraction: false
+      },
+  
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      
+    });
 
 
 
